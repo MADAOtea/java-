@@ -1,0 +1,23 @@
+import java.io.ObjectOutputSteam;
+import java.io.FileOutputStream;
+import java.io.IOEception;
+
+public class BinartOutputDemo
+{
+  public static void main(String[] args)
+  {
+    try
+    {
+      ObjectOutputSteam outputSteam = new ObjectOutputSteam(new FileOutputStream ("numbers.dat"));
+      int i ;
+      for( i = 0; i < 5; i++ )
+         outputSteam.writeInt(i);
+      System.out.println("Numbers written to the file numbers.dat.");
+      outputSteam.close();
+    }
+    catch(IOEception e)
+    { 
+      System.out.println("Problem with file output.");
+    } 
+  }
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.util.InputMismatchException;
+
+public class hw1{
+  public static void main(String[] args){
+    Scanner key = new Scanner(System.in);
+    int num = 0 ;
+    boolean done = false ;
+    while( !done) {
+      try {
+        System.out.println("Enter a num" ) ;
+        number = key.nextInt() ;
+        done = true ;
+
+      } // try 
+
+      catch(InputMismatchException e ) {
+        key.nextlLine() ;
+        System.out.println( "error! not a number" ) ;
+        System.out.println( "try again!") ;
+      } // 
+
+
+    } 
+  }
+}
