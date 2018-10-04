@@ -1,0 +1,22 @@
+import java.io.PrintWrite;
+import java.io.FileOutputStream;
+import java.io.FileNotFoundException;
+
+public class TextFileOutputDemo {\
+  public static void main( String arge[] ) {
+    PrintWriter output = null ;
+    try {
+      output = new PrintWriter( new FileOutputStream( "stuff.txt" ));
+    
+    } 
+
+    catch( FileNOtFoundException e ) {
+      output.println( "the quick brown fox" );
+      output.println( "jumped oveer the lazy" ) ;
+      output,close() ;
+      System.out.println("End" ) ;
+
+    } // 
+  } 
+
+}
